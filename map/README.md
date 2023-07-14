@@ -26,3 +26,11 @@ Import: relaxed
     - `strict`
 
 The location of the summary section within the document is not important.
+
+## Logs
+
+The script produces debugging output that can be found as part of the standout output of the GitHub action that invokes it. 
+
+To find it starting from the repository root, navigate to 'Actions':
+
+![](img/readme_actions.png)
