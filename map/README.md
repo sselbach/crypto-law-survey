@@ -4,6 +4,8 @@ This GitHub Repository automatically generates an overview world map of the cryp
 
 The map is an interactive leaflet.js map and can be found in `map/export`. The most recent maps are named `import.html` and `export.html` respectively, older maps are archived as `import_statusuntil_YYYYMMDD.html` and `export_statusuntil_YYYYMMDD.html`.
 
+The geographical dataset is taken from the Natural Earth project: https://www.naturalearthdata.com/downloads/110m-cultural-vectors/
+
 ## Tagging
 
 Country data is stored in markdown files in `data/countries`. For the script to recognize country data, the markdown files should have a summary in the format demonstrated by example below:
