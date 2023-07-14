@@ -29,8 +29,20 @@ The location of the summary section within the document is not important.
 
 ## Logs
 
-The script produces debugging output that can be found as part of the standout output of the GitHub action that invokes it. 
+The script produces debugging output that can be found as part of the standout output of the GitHub action that invokes it. Usually it takes a minute or so for the output to be available.
 
 To find it starting from the repository root, navigate to 'Actions':
 
 ![](img/readme_actions.png)
+
+Select the workflow run from your commit (likely the most recent one at the top):
+
+![](img/readme_workflow_runs.png)
+
+Select the 'generate-map' job:
+
+![](img/readme_job.png)
+
+Finally, open the 'Run generate_map.py' tab to see the output of the script:
+
+![](img/readme_action.png)
