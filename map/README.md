@@ -1,0 +1,28 @@
+# Crypto Regulations Overview Map
+
+This GitHub Repository automatically generates an overview world map of the crypto import/export regulations that are found in the `data/countries` directory. It does so via a Python script that is invoked by a GitHub action whenever a commit is pushed.
+
+The map is an interactive leaflet.js map and can be found in `map/export`. The most recent maps are named `import.html` and `export.html` respectively, older maps are archived as `import_statusuntil_YYYYMMDD.html` and `export_statusuntil_YYYYMMDD.html`.
+
+## Tagging
+
+Country data is stored in markdown files in `data/countries`. For the script to recognize country data, the markdown files should have a summary in the format demonstrated by example below:
+
+```
+### Summary
+Alpha2: ca
+
+Export: medium
+
+Import: relaxed
+```
+
+ - `Alpha2` is the [ISO Alpha2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country you are referencing. You can find a list of all codes that are available on the map in the file `map/export/crypto_data.csv`
+
+  - `Export` and `Import` are the tags for the respective regulations. You can choose from the following values:
+    - `unknown`
+    - `relaxed`
+    - `medium`
+    - `strict`
+
+The location of the summary section within the document is not important.
